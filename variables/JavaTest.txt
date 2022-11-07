@@ -1,0 +1,173 @@
+--------------------------------JAVA TEST--------------------------------------
+
+1) Explain JRE, JDK, JVM
+ 
+-->
+
+* JVM
+JVM- Provide runtime environment to execute byte code.(runs the byte code).
+
+Tasks of JVM
+   1)Loads the byte code.
+   2)Verifies the byte code.
+   3)Execute the byte code. (Interpreter)
+JDK will available in JRE(java runtime environment).
+(JRE--.Physically exist).
+
+JVM take the help of set of libraries in the JRE to execute the byte code.
+---------------
+* JRE
+JRE--. is a combination of JVM and set of libraries. (JRE=JVM+set of lib)
+JRE--.Physically exist.
+---------------
+* JDK
+JDK-->java development kit(JDK->JRE->JVM)----->JVM+development tools(compiler,debugger,java docs,etc..)
+
+JDK-->to write (develop) and execute the java code.
+
+JDK,JRE and JVM Platform Dependent.
+
+1. compile time  contains compiler(handled by JDK).
+2. Runtime (handled by JRE which contains JVM.
+
+   
+----------------------------------------------------------------------------------------
+
+
+2)Explain the following 
+      
+    1) Class:
+              It is a blueprint or design Which contains its own states and its behaviour.
+
+    2)Object: 
+              It is a Instance  of a class.
+              It creats a multiple copies of a class.
+              It exists in a real world.
+
+    3)static: It is return type of data.
+  
+    4)public: 
+              everyone can access files.
+
+    5)Private: 
+              everyone can not access a files
+
+--------------------------------------------------------------------------------------
+5)Explain the data tyes in java and give example for each
+
+--> Two types of datatype:
+    1) Primitive datatype
+    2)Non-primitive datatype
+
+**1)Primitive datatype:
+
+short      0               
+
+int       0              
+
+long      0             
+
+float     0.0                
+
+double    0.0              
+
+boolean   false            
+
+char     (space)   
+
+**2) Non-primitive datatype:
+
+    String 
+
+   Example : ClassName             
+
+----------------------------------------------------------------------------------------------------------
+
+3)what is an array?
+--> Array is a collection of similar type of data in a variable.
+
+----------------------------------------------------------------------------------------------------------
+
+4)what is variable? 
+--> Memory allocated to store data.
+
+types of variables
+   local  variables-->(variable inside main)
+   static  variables-->(variable outside main but inside class)
+   instance/non-static variables
+   parameter  variables  
+
+----------------------------------------------------------------------------------------------------------
+
+7)Constructor: It is special type of method.
+  
+   *During Initialization of data the constructor is invoked.
+   *Yes
+   *Two types of constructor
+     1) Default constructor
+     2) Parameterised constructor
+
+   1)Default : In this we have to add data 2times so parameterised is better than the Default constructor
+   2)parameterised constructor : It is better to use here initialization will be at only one time.
+
+-----------------------------------------------------------------------------------------------------------
+
+8)Java features:
+
+  *Platform independent
+  *secure
+  *object oriented
+  *simple
+
+------------------------------------------------------------------------------------------------------------
+
+9)'write once run anywhere' nature : Platform Independent.(.class is platform independent).
+
+------------------------------------------------------------------------------------------------------------
+
+11)Purpose of default constructor:It used to create an object.
+
+------------------------------------------------------------------------------------------------------------
+
+12)Reverse the given Number.
+
+-->
+class ReverseNumber{
+
+  public static void main(String c[]){
+  int num = 1234, rev =0;
+  System.out.println("Original Number : " +num);
+ while(num != 0){
+
+ int digit = num % 10;
+ rev = rev * 10 + digit;
+ num = num/10;
+ }
+
+ System.out.println("Rev Number : " +rev);
+ }
+}
+
+-------------------------------------------------------------------------------------------------------------
+
+13)Factorial of given number.
+
+-->
+class Factorial{
+
+  public static void main(String a[])
+  {
+  int num = 5;
+    int factorial = 1;
+
+
+    for(int i = 1; i<=num; ++i)
+    {
+    factorial =factorial * i;
+    }
+
+    System.out.printf("Factorial of" +num+ "is:" +factorial);
+  }
+}
+
+
