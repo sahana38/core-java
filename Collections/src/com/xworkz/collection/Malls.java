@@ -6,15 +6,15 @@ public class Malls {
 	
 	public static void main(String[] a) {
 		
-		String mall1=("Mantri square");
-		String mall2=("LuLu");
-		String mall3=("Orion");
-		String mall4=("Minakshi");
-		String mall5=("GT");
-		String mall6=("Forum");
-		String mall7=("Banglore central mall");
-		String mall8=("Garuda");
-		String mall9=("UB city");
+		String mall1 = ("Mantri square");
+		String mall2 = ("LuLu");
+		String mall3 = ("Orion");
+		String mall4 = ("Minakshi");
+		String mall5 = ("GT");
+		String mall6 = ("Forum");
+		String mall7 = ("Banglore central mall");
+		String mall8 = ("Garuda");
+		String mall9 = ("UB city");
 		String mall10=("Phoenix");
 		String mall11=("Dubai mall");
 		String mall12=("U mall");
@@ -48,6 +48,7 @@ public class Malls {
 		String mall40=("Nexus mall");
 		String mall41=("Tibet mall");
 		String mall42=("Mysore central mall");
+		
 		 
 		 TreeSet<String> malls=new TreeSet();
 		 
@@ -94,7 +95,7 @@ public class Malls {
 		 malls.add(mall41);
 		 malls.add(mall42);
 		 
-		  System.out.println(malls.size());
+		    System.out.println(malls.size());
 			
 	        malls.clear();
 			System.out.println("After clear..");
