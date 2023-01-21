@@ -1,0 +1,218 @@
+1)
+Java Collection Hierarchy is the hierarchy of the whole collection framework and it 
+contained within it with four core interfaces they are Collection, Set, Map and List. 
+Additionally, there are two more focused interfaces namely the SortedSet and SortedMap 
+which is used for sorting purpose.
+
+interfaces like Set, Queue, Deque, List and also it available with the classes like ArrayList, 
+LinkedList, LinkedHashSet, HashSet, Treeset,linkedlist.
+
+                                                 Iterable
+                                                    |
+                                                Collection
+                                                    |
+                         ---------------------------------------------------------------  
+                         |                |                      |                     |  
+                       List             Queue                   HashSet               Set     
+                 1)ArrayList          Deque                    TreeSet              SortedSet
+
+                 2)LinkedList         ArrayQue                                      LinkedSet
+------------------------------------------------------------------------------------------------------------------
+
+2)
+
+Map is a Interface.
+
+Key--> key must be unique.
+value--> can be a duplicate.
+
+Syntax:
+Map<key,value> ref = Treeset ();
+
+------------------------------------------------------------------------------------------------------------------
+
+3)     Hash Set                                                  TreeSet
+
+   It is implemented using hash Table.            Tree set is implented using a tree structure.
+   HashSet allows a null object.                  Tree set does not allow null objects.
+   Hash set use equals method to                  It use compare method for comparing two objects.
+   compare two objects.   
+
+   Hash set does not maintain any order.          It maintains an object in sortedd order.
+
+
+-----------------------------------------------------------------------------------------------------------------
+5)     Fail-Fast systems abort operation as-fast-as-possible exposing failures immediately
+    and stopping the whole operation. 
+
+       Fail-Safe systems don't abort an operation in the case of a failure. Such systems try to 
+    avoid raising failures as much as possible.  
+
+------------------------------------------------------------------------------------------------------------------
+6)String testString = "String";
+IntStream intStream = testString.chars();
+
+------------------------------------------------------------------------------------------------------------------
+7)
+The Spliterator API was designed to support efficient parallel traversal in addition to sequential traversal, 
+by supporting decomposition as well as single-element iteration.
+
+How does Spliterator work in Java?
+Image result for explain spliterator API
+It uses tryAdvance() method to iterate elements individually in multiple Threads to support Parallel Processing.
+It uses forEachRemaining() method to iterate elements sequentially in a single Thread. 
+It uses trySplit() method to divide itself into Sub-Spliterators to support Parallel Processing.
+
+-------------------------------------------------------------------------------------------------------------------
+9)
+Core (spring-core) is the core of the framework that power features such as 
+Inversion of Control and dependency injection.
+ Beans (spring-beans) provides Beanfactory, which is a sophisticated implementation of the factory pattern.
+
+Spring makes programming Java quicker, easier, and safer for everybody. 
+Spring's focus on speed, simplicity, and productivity has made it the world's most popular Java framework.
+
+--------------------------------------------------------------------------------------------------------------------
+10)
+Dependency injection (DI) is the process of supplying a resource that a given piece of code requires. 
+The required resource, which is often a component of the application itself, is called a dependency.
+
+Dependency Injection in Java is a way to achieve Inversion of control (IoC) in our application by moving 
+objects binding from compile time to runtime. We can achieve IoC through Factory Pattern, 
+Template Method Design Pattern, Strategy Pattern and Service Locator pattern too.
+
+----------------------------------------------------------------------------------------------------------------------
+11)
+
+In Spring Boot, we can use Spring Framework to define our beans and their dependency injection. 
+The @ComponentScan annotation is used to find beans and the corresponding injected with @Autowired annotation. 
+If you followed the Spring Boot typical layout, no need to specify any arguments for @ComponentScan annotation.
+
+it supports two types of bean injection: Constructor Based Bean Injection. Setter Based Bean Injection.
+
+--------------------------------------------------------------------------------------------------------------------
+13)
+                 StringBuffer                                                            StringBuilder
+1)    StringBuffer is synchronized i.e. thread safe. 	                     StringBuilder is non-synchronized i.e. not thread safe. 
+2)	StringBuffer is less efficient than StringBuilder.	               StringBuilder is more efficient than StringBuffer.
+3)	StringBuffer was introduced in Java 1.0	                           StringBuilder was introduced in Java 1.5
+
+---------------------------------------------------------------------------------------------------------------------
+14)
+The BeanFactory Interface:
+root interface for accessing a Spring bean container. 
+It is the actual container that instantiates, configures, and manages a number of beans. 
+These beans collaborate with one another and thus have dependencies between themselves. 
+These dependencies are reflected in the configuration data used by the BeanFactory. 
+This interface is implemented by the objects that hold a number of bean definitions, each uniquely identified by a String name. 
+The most common implementation class used for this BeanFactory is XmlBeanFactory available in org.springframework.beans.factory.xml package. 
+
+
+The ApplicationContext Interface:
+This interface is designed on top of the BeanFactory interface. 
+The ApplicationContext interface is the advanced container that enhances BeanFactory functionality in a more framework-oriented style.
+ While the BeanFactory provides basic functionality for managing and manipulating beans, 
+often in a programmatic way, the ApplicationContext provides extra functionality like MessageSource, Access to resources, 
+Event propagation to beans, Loading of multiple (hierarchical) contexts etc. There are so many implementation classes that can be used 
+such as ClassPathXmlApplicationContext, FileSystemXmlApplicationContext, AnnotationConfigWebApplicationContext etc.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+15)
+1)Spring AOP:
+Spring AOP takes out the direct dependency of crosscutting tasks from classes that we can't achieve through normal object oriented programming model. 
+For example, we can have a separate class for logging but again the functional classes will have to call these methods to achieve logging across the application.
+
+2)IOC:
+Spring IoC (Inversion of Control) Container is the core of Spring Framework. It creates the objects, configures and assembles their dependencies, 
+manages their entire life cycle. The Container uses Dependency Injection(DI) to manage the components that make up the application.
+
+3)POJO:
+The POJO class can be accessed by using their names. The Bean class can only be accessed by using the getters and setters. 
+Fields may have any of the access modifiers such as public, private, protected. Fields can only have private access.
+
+4)@Component:
+A component is an object having a graphical representation that can be displayed on the screen and that can interact with the user
+It is used to explicitly declare a single bean, rather than letting Spring do it automatically. 
+If any class is annotated with @Component it will be automatically detect by using classpath scan. We should use @bean, 
+if you want specific implementation based on dynamic condition.
+
+5)@ComponentScan:
+What is @ComponentScan in Spring?
+One of the most important annotations in spring is @ComponentScan which is used along with the 
+@Configuration annotation to specify the packages that we want to be scanned.
+ @ComponentScan without arguments tells Spring to scan the current package and all of its sub-packages.
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+17)
+Maven is a powerful project management tool that is based on POM (project object model). It is used for projects build, dependency and documentation.
+
+Gradle is a build automation tool known for its flexibility to build software. A build automation tool is used to automate the creation of applications. 
+
+The building process includes compiling, linking, and packaging the code. The process becomes more consistent with the help of build automation tools.
+Quarkus was created to enable Java developers to create applications for a modern, cloud-native world. 
+Quarkus is a Kubernetes-native Java framework tailored for GraalVM and HotSpot, crafted from best-of-breed Java libraries and standards.
+
+A server commonly refers to a computer program that receives and responds to requests made over a network. 
+It receives the request for a web document from the client and sends the requested information to the client computer on the Internet.
+-------------------------------------------------------------------------------------------------------------------------------------------
+18)
+
+package encryptdecrypt;
+
+public class Main {
+
+    final static int lower_case_a = 'a';
+    final static int lower_case_z = 'z';
+
+    public static void main(String[] args) {
+        String s = "we found a treasure!";
+
+        StringBuffer reverse = new StringBuffer();
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+            if ((int)c >= lower_case_a && (int)c <= lower_case_z)
+                reverse.append((char)(lower_case_z - c + lower_case_a));
+            else
+                reverse.append((char) c);
+        }
+        System.out.println(reverse.toString());
+    }
+ }
+-------------------------------------------------------------------------------------------------------------------------------------
+
+20)
+
+import java.util.*;
+
+  public class Exercise13 {
+  public static void main(String[] args) {
+    // create an empty linked list
+     LinkedList<String> l_list = new LinkedList<String>();
+   // use add() method to add values in the linked list
+          l_list.add("Red");
+          l_list.add("Green");
+          l_list.add("Black");
+          l_list.add("Pink");
+          l_list.add("orange");
+      
+     // print the list
+   System.out.println("The Original linked list: " + l_list);
+
+  // Remove the first element
+    Object firstElement = l_list.removeFirst();
+    System.out.println("Element removed: "+ firstElement);
+ 
+  // Remove the last element
+    Object lastElement = l_list.removeLast();
+    System.out.println("Element removed: "+ lastElement);
+    System.out.println("The New linked list: " + l_list);
+  }
+}
+------------------------------------------------------------------------------------------------------------------------------
+
